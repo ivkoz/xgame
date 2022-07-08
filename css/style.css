@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #181818;
+}
+
+.container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.container .header .header-wrapper {
+  display: flex;
+  align-items: center;
+}
+.container .header .header-wrapper .header-logo a {
+  color: #fff;
+  text-decoration: none;
+}
+.container .header .header-wrapper .header-menu {
+  margin-right: auto;
+  margin-left: auto;
+}
+.container .header .header-wrapper .header-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+.container .header .header-wrapper .header-right-side {
+  display: flex;
+  align-items: center;
+}
+.container .header .header-wrapper .header-right-side span {
+  margin-right: 20px;
+}
+.container .header .header-wrapper .header-right-side a img {
+  width: 25px;
+  height: auto;
+  margin-right: 10px;
+}
+.container .header .header-wrapper .header-right-side a img:not(:last-child) {
+  margin-right: 10px;
+}
+.container .header ul {
+  display: flex;
+}
+.container .header li {
+  list-style-type: none;
+}
+.container .header li:not(:last-child) {
+  margin-right: 10px;
+}
+.container .main {
+  margin-top: 100px;
+}
+.container .main .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.container .main .main-wrapper .main-button {
+  background-color: #71ae09;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  max-width: 100px;
+}/*# sourceMappingURL=style.css.map */

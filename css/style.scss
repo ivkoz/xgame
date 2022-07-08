@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+$gray: #181818;
+$white: #fff;
+$green: #71ae09;
+$font: 'Open Sans', sans-serif;
+body{
+    font-family: $font;
+    margin: 0;
+    padding: 0;
+    color: $white;
+    background-color: $gray;
+}
+
+.container{
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .header{
+        .header-wrapper{
+            display: flex;
+            align-items: center;
+            .header-logo{
+                a{
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+            .header-menu{
+                margin-right: auto;
+                margin-left: auto;
+                a{
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+
+            .header-right-side{
+                display: flex;
+                align-items: center;
+                span{
+                    margin-right: 20px;
+                }
+                a{
+                    img{
+                        width: 25px;
+                        height: auto;
+                        margin-right: 10px;
+                        &:not(:last-child){
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        ul{
+            display: flex;
+
+        }
+        li{
+            &:not(:last-child){
+                margin-right: 10px;
+            }
+            list-style-type: none;
+        }
+    }
+    .main{
+        margin-top: 100px;
+        .main-wrapper{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            .main-button{
+                background-color: $green;
+                color: $white;
+                text-decoration: none;
+                padding:12px 20px;
+                max-width: 100px;
+            }
+        }
+    }
+}
