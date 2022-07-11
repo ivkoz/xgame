@@ -79,6 +79,97 @@ body{
                 padding:12px 20px;
                 max-width: 100px;
             }
+
+            .slider {
+                height: 250px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                width: 1140px;
+            }
+            
+            .slider::before, .slider::after {
+                content: "";
+                height: 100%;
+                position: absolute;
+                width: 100px;
+                z-index: 2;
+            }
+            
+            .slider::after {
+                right: 0;
+                top: 0;
+                -webkit-transform: rotateZ(180deg);
+                transform: rotateZ(180deg);
+            }
+            
+            .slider::before {
+                left: 0;
+                top: 0;
+            }
+            
+            .slider .slide-track {
+                animation: scroll 80s linear infinite;
+                display: flex;
+                width: calc(250px * 18);
+            
+            }
+            
+            .slider .slide-track:hover {
+                animation-play-state: paused;
+            }
+            
+            .slider .slide {
+                height: 250px;
+                width: 250px;
+            }
+            
+            
+            .slide:nth-child(1), .slide:nth-child(10) {
+                background-image: url(../img/fifa.jpg);
+            }
+            
+            .slide:nth-child(2), .slide:nth-child(11) {
+                background-image: url(../img/mk.jpg);
+            }
+            
+            .slide:nth-child(3), .slide:nth-child(12) {
+                background-image: url(../img/bf5.jpg);
+            }
+            
+            .slide:nth-child(4), .slide:nth-child(13) {
+                background-image: url(../img/fh5.jpg);
+            }
+            
+            .slide:nth-child(5), .slide:nth-child(14) {
+                background-image: url(../img/out.jpg);
+            }
+            
+            .slide:nth-child(6), .slide:nth-child(15) {
+                background-image: url(../img/swbf.jpg);
+            }
+            
+            .slide:nth-child(7), .slide:nth-child(16) {
+                background-image: url(../img/inj2.jpg);
+            }
+            
+            .slide:nth-child(8), .slide:nth-child(17) {
+                background-image: url(../img/alin.jpg);
+            }
+            
+            .slide:nth-child(9), .slide:nth-child(18) {
+                background-image: url(../img/doom.jpg);
+            }
+            
+            @keyframes scroll {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(calc(-250px * 9));
+                }
+            }
         }
     }
 }
+

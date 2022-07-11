@@ -69,4 +69,84 @@ body {
   text-decoration: none;
   padding: 12px 20px;
   max-width: 100px;
+}
+.container .main .main-wrapper .slider {
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1140px;
+}
+.container .main .main-wrapper .slider::before, .container .main .main-wrapper .slider::after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+.container .main .main-wrapper .slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.container .main .main-wrapper .slider::before {
+  left: 0;
+  top: 0;
+}
+.container .main .main-wrapper .slider .slide-track {
+  -webkit-animation: scroll 80s linear infinite;
+          animation: scroll 80s linear infinite;
+  display: flex;
+  width: 4500px;
+}
+.container .main .main-wrapper .slider .slide-track:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.container .main .main-wrapper .slider .slide {
+  height: 250px;
+  width: 250px;
+}
+.container .main .main-wrapper .slide:nth-child(1), .container .main .main-wrapper .slide:nth-child(10) {
+  background-image: url(../img/fifa.jpg);
+}
+.container .main .main-wrapper .slide:nth-child(2), .container .main .main-wrapper .slide:nth-child(11) {
+  background-image: url(../img/mk.jpg);
+}
+.container .main .main-wrapper .slide:nth-child(3), .container .main .main-wrapper .slide:nth-child(12) {
+  background-image: url(../img/bf5.jpg);
+}
+.container .main .main-wrapper .slide:nth-child(4), .container .main .main-wrapper .slide:nth-child(13) {
+  background-image: url(../img/fh5.jpg);
+}
+.container .main .main-wrapper .slide:nth-child(5), .container .main .main-wrapper .slide:nth-child(14) {
+  background-image: url(../img/out.jpg);
+}
+.container .main .main-wrapper .slide:nth-child(6), .container .main .main-wrapper .slide:nth-child(15) {
+  background-image: url(../img/swbf.jpg);
+}
+.container .main .main-wrapper .slide:nth-child(7), .container .main .main-wrapper .slide:nth-child(16) {
+  background-image: url(../img/inj2.jpg);
+}
+.container .main .main-wrapper .slide:nth-child(8), .container .main .main-wrapper .slide:nth-child(17) {
+  background-image: url(../img/alin.jpg);
+}
+.container .main .main-wrapper .slide:nth-child(9), .container .main .main-wrapper .slide:nth-child(18) {
+  background-image: url(../img/doom.jpg);
+}
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2250px);
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2250px);
+  }
 }/*# sourceMappingURL=style.css.map */
