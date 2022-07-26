@@ -190,6 +190,9 @@ body{
                     padding: 30px 20px;
                     display: flex;
                     flex-direction: column;
+                    &:not(:last-child){
+                        margin-right: 10px;
+                    }
                     .why-item-number{
                         font-size: 70px;
                         font-weight: bold;
@@ -212,6 +215,10 @@ body{
             }
             .main-prices{
                 width: 100%;
+                a{
+                    color: $white;
+                    text-decoration: none;
+                }
                 .price-items{
                     display: flex;
                     justify-content: space-between;

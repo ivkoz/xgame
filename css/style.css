@@ -168,6 +168,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.container .main .main-wrapper .main-why-items .why-item:not(:last-child) {
+  margin-right: 10px;
+}
 .container .main .main-wrapper .main-why-items .why-item .why-item-number {
   font-size: 70px;
   font-weight: bold;
@@ -186,6 +189,10 @@ body {
 }
 .container .main .main-wrapper .main-prices {
   width: 100%;
+}
+.container .main .main-wrapper .main-prices a {
+  color: #fff;
+  text-decoration: none;
 }
 .container .main .main-wrapper .main-prices .price-items {
   display: flex;
