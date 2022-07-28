@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 $gray: #181818;
 $lightgray: #3d3d3d;
 $white: #fff;
 $green: #71ae09;
 $font: 'Open Sans', sans-serif;
+$font_2: 'Comfortaa', cursive;
 body{
     display: flex;
     font-family: $font;
@@ -72,21 +74,34 @@ body{
         .main-wrapper{
             display: flex;
             flex-direction: column;
-            text-align: center;
-            align-items: center;
+            .main-blocks{
+                display: flex;
+            }
             .main-button{
-                background-color: $green;
                 color: $white;
                 text-decoration: none;
                 padding:12px 20px;
                 max-width: 100px;
+                border: 1px solid $green;
+                transition: 0.3s;
+                
+                &:hover{
+                    transition: 0.3s;
+                    background-color: $green;
+                }
             }
 
             .main-h1{
+                text-align: left;
                 margin-bottom: 0px;
+                font-family: $font_2;
+                font-weight: 700;
+                font-size: 80px;
             }
             .main-h2{
+                margin-bottom: 35px;
                 margin-top: 5px;
+                font-weight: 400;
             }
 
             .slider {
@@ -182,7 +197,7 @@ body{
             .main-why-items{
                 display: flex;
                 .why-item{
-                    -webkit-box-shadow: -13px 20px 8px 0px rgba(34, 60, 80, 0.2);
+                    -webkit-box-shadow: -13px 10px 8px 0px rgba(34, 60, 80, 0.2);
                     -moz-box-shadow: -13px 20px 8px 0px rgba(34, 60, 80, 0.2);
                     box-shadow: -13px 20px 8px 0px rgba(34, 60, 80, 0.2);
                     background-color: $lightgray;
@@ -244,3 +259,8 @@ body{
     }
 }
 
+@media (max-width:1440px) {
+    .container{
+        max-width: 1000px;
+    }
+}
